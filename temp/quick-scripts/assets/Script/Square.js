@@ -31,6 +31,10 @@ var Square = cc.Class({
             default: null,
             type: require("Game")
         },
+        gameScriptP2: {
+            default: null,
+            type: require("Game")
+        },
         tempTarget: 0,
         toDouble: false,
         toDestroyed: false,
@@ -53,14 +57,15 @@ var Square = cc.Class({
     },
 
     // LIFE-CYCLE CALLBACKS:
-    move: function move() {
-        var action = cc.moveTo(this.moveSpeed, this.gameScript.positionList[this.tempTarget].getPosition());
+    move: function move(thatGameScript) {
+        var action = cc.moveTo(this.moveSpeed, thatGameScript.positionList[this.tempTarget].getPosition());
         // 执行动作
         this.node.runAction(action);
     },
     onLoad: function onLoad() {
         this.numLabel = this.node.getChildByName("Number");
         this.gameScript = cc.find("Game").getComponent("Game");
+        this.gameScriptP2 = cc.find("GameP2").getComponent("Game");
     },
     start: function start() {
 

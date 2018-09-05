@@ -12,9 +12,14 @@ var Game = cc.Class({
     extends: cc.Component,
 
     properties: {
+        isP2: false,
         destroySpeed: 2,
         //fadeSpeed: 0.4,
         timeOut : true,
+        vsController: {
+            default: null,
+            type: require("VSController")
+        },
         squarePrefab: {
             default: null,
             type: cc.Prefab
@@ -59,6 +64,7 @@ var Game = cc.Class({
         }
         
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
+        
     },
 
     start () {
@@ -146,7 +152,7 @@ var Game = cc.Class({
         }
 
         for(var i = 4; i < 16; ++i) {
-            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move();   
+            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move(this);   
         }  //物理移动（逻辑上还没移动），移动后下标为source，target为目标
         for(var i = 0; i < 16; ++i) {
             if((this.moveableList[i] != null) && (this.moveableList[i].getComponent(require("Square")).toDestroyed == true)) {  
@@ -222,7 +228,7 @@ var Game = cc.Class({
         }
 
         for(var i = 0; i < 16; ++i) {
-            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move();   
+            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move(this);   
         }  //物理移动（逻辑上还没移动），移动后下标为source，target为目标
         for(var i = 0; i < 16; ++i) {
             if((this.moveableList[i] != null) && (this.moveableList[i].getComponent(require("Square")).toDestroyed == true))   {  
@@ -278,7 +284,7 @@ var Game = cc.Class({
         }
 
         for(var i = 0; i < 16; ++i) {
-            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move();   
+            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move(this);   
         }  //物理移动（逻辑上还没移动），移动后下标为source，target为目标
         for(var i = 0; i < 16; ++i) {
             if((this.moveableList[i] != null) && (this.moveableList[i].getComponent(require("Square")).toDestroyed == true)) {  
@@ -334,7 +340,7 @@ var Game = cc.Class({
         }
 
         for(var i = 0; i < 16; ++i) {
-            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move();   
+            if(this.moveableList[i] != null)  this.moveableList[i].getComponent(require("Square")).move(this);   
         }  //物理移动（逻辑上还没移动），移动后下标为source，target为目标
         for(var i = 0; i < 16; ++i) {
             if((this.moveableList[i] != null) && (this.moveableList[i].getComponent(require("Square")).toDestroyed == true)) {  
@@ -385,6 +391,35 @@ var Game = cc.Class({
             default:
                 break;  
         }
+    },
+    onSlide (direction) {    //1下 2上 3右 4左
+        // set a flag when key pressed
+        if(this.timeOut == false) return false;  //屏蔽输入
+        switch(direction) {
+            case "down":
+                if(this.moveDown() == false) return false;
+                this.timeOut = false;
+                this.scheduleOnce(function() {this.timeOut = true;this.randomCreate();},0.8);
+                //for(var i = 0; i < 16; ++i) console.log(this.moveableList[i]);
+                break;
+            case "up":
+                if(this.moveUp() == false) return false;
+                this.timeOut = false;
+                this.scheduleOnce(function() {this.timeOut = true;this.randomCreate();},0.8);
+                break;  
+            case "right":
+                if(this.moveRight() == false) return false;
+                this.timeOut = false;
+                this.scheduleOnce(function() {this.timeOut = true; this.randomCreate();},0.8);
+                break;
+            case "left":
+                if(this.moveLeft() == false) return false;
+                this.timeOut = false;
+                this.scheduleOnce(function() {this.timeOut = true;this.randomCreate();},0.8);
+                break;  
+            default:
+                break;  
+        } return true;
     },
     /*eat(source, target, newNode) {
         this.moveableList[target].destroy();

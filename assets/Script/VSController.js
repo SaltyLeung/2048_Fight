@@ -8,31 +8,35 @@
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 
-var Square = cc.Class({
+var VSController = cc.Class({
     extends: cc.Component,
 
     properties: {
-        number: 0,  //所拥有的数字
-        numLabel: {
-            default: null,
-            type:cc.Label   
-        },
-        gameNode: {
+        isDown: true,
+        sliceUp:{
             default: null,
             type: cc.Node
         },
-        gameScript: {
+        sliceDown:{
             default: null,
-            type: require("Game")
+            type: cc.Node
         },
-        gameScriptP2: {
+        buttonUp:{
             default: null,
-            type: require("Game")
+            type: cc.Node
         },
-        tempTarget:0,
-        toDouble: false,
-        toDestroyed: false,
-        moveSpeed:0.4
+        buttonDown:{
+            default: null,
+            type: cc.Node
+        },
+        blockWhite:{
+            default: null,
+            type: cc.Node
+        },
+        blockDark:{
+            default: null,
+            type: cc.Node
+        },
         // foo: {
         //     // ATTRIBUTES:
         //     default: null,        // The default value will be used only when the component attaching
@@ -51,34 +55,39 @@ var Square = cc.Class({
     },
 
     // LIFE-CYCLE CALLBACKS:
-    move(thatGameScript) {
-        var action = cc.moveTo(this.moveSpeed, thatGameScript.positionList[this.tempTarget].getPosition());
-// 执行动作
-        this.node.runAction(action);
-    },
 
-    onLoad () {
-        this.numLabel = this.node.getChildByName("Number");
-        this.gameScript = cc.find("Game").getComponent("Game");
-        this.gameScriptP2 = cc.find("GameP2").getComponent("Game");
-    },
+    // onLoad () {},
 
     start () {
-        
-        //console.log(this.numLabel.getComponent(cc.Label));
-        
-    },
-    /*down(currIndex) {
-        var targetIndex = currIndex;
-        for(var i = currIndex - 4; i > 0; i-= 4) 
-        if(gameScript.positionList[i].number == 0) targetIndex = i;
-        else if((this.number == this.gameScript.positionList[i].number) && this.gameScript.eatableList[i] == true)  {
-            this.gameScript.eat(currIndex, i, this.node);
-        }
-    },*/
 
-    update (dt) {
-        this.numLabel.getComponent(cc.Label).string = this.number.toString();
     },
+    switchSide() {
+      if(this.isDown == true) {
+        console.log("switchA");
+          this.sliceDown.active = false;
+          this.buttonUp.active = false;
+          this.blockDark.active = true;
+          this.isDown = false;
+      } else {
+        console.log("switchB");
+        this.sliceUp.active = false;
+        this.buttonDown.active = false;
+        this.blockWhite.active = true;
+        this.isDown = true;
+      }
+    },
+    activeDark() {
+        this.sliceUp.active = true;
+        this.buttonDown.active = true;
+        this.blockDark.active = false;
+    },
+    activeWhite() {
+        this.buttonUp.active = true;
+        this.sliceDown.active = true;
+        this.blockWhite.active = false;
+    }
+
+    // update (dt) {},
 });
-module.exports = Square;
+
+module.exports = VSController;
