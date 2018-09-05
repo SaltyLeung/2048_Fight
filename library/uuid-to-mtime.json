@@ -270,28 +270,38 @@
     "relativePath": "Prefab"
   },
   "5bf6c67a-c081-456f-836a-277d935f0d4f": {
-    "asset": 1535978705048,
-    "meta": 1535978705073,
+    "asset": 1536122195713,
+    "meta": 1536122195733,
     "relativePath": "Prefab\\Square.prefab"
   },
   "cfaa8f10-deb4-4159-8091-59a45e75bf41": {
-    "asset": 1535976182136,
-    "meta": 1535975797155,
+    "asset": 1536024213558,
+    "meta": 1536114037213,
     "relativePath": "Script\\Define.js"
   },
-  "cada9bb7-11de-4bc1-9c7f-c244477e4149": {
-    "asset": 1536073992241,
-    "meta": 1536074014504,
-    "relativePath": "Script\\Square.js"
-  },
   "1f86761d-8268-4d90-b877-65de78d6d614": {
-    "asset": 1536079816429,
-    "meta": 1536079816491,
+    "asset": 1536121963754,
+    "meta": 1536121963800,
     "relativePath": "Scene\\Game.fire"
   },
+  "ca23f331-ed29-4894-a3a7-2370ed7bef41": {
+    "asset": 1536121729785,
+    "meta": 1536121729814,
+    "relativePath": "Animation\\2048Fade.anim"
+  },
+  "48df96fe-1abe-4bd7-82be-cba18789f215": {
+    "asset": 1536122146460,
+    "meta": 1536122146488,
+    "relativePath": "Animation\\2048Show.anim"
+  },
   "69f1a3d7-39d6-47c6-9846-e7d1521efbdc": {
-    "asset": 1536083881241,
-    "meta": 1536084406427,
+    "asset": 1536123857724,
+    "meta": 1536123858314,
     "relativePath": "Script\\Game.js"
+  },
+  "cada9bb7-11de-4bc1-9c7f-c244477e4149": {
+    "asset": 1536124240133,
+    "meta": 1536124268729,
+    "relativePath": "Script\\Square.js"
   }
 }

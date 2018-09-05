@@ -1693,7 +1693,7 @@
       }
     ],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [],
     "_prefab": null,
     "_id": "5cAUMgH9pBfZ772Jcbqz5i",
@@ -3118,6 +3118,7 @@
       "__id__": 76
     },
     "_enabled": true,
+    "timeOut": true,
     "squarePrefab": {
       "__uuid__": "5bf6c67a-c081-456f-836a-277d935f0d4f"
     },

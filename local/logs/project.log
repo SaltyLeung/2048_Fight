@@ -1,0 +1,247 @@
+2018-09-05T02:20:26.807Z - normal: Load ~/.CocosCreator/settings.json
+2018-09-05T02:20:26.807Z - normal: checking language setting...
+2018-09-05T02:20:26.807Z - normal: Language: zh
+2018-09-05T02:20:31.795Z - success: protocol editor-framework registered
+2018-09-05T02:20:31.795Z - success: protocol app registered
+2018-09-05T02:20:31.795Z - success: protocol theme registered
+2018-09-05T02:20:31.795Z - success: protocol packages registered
+2018-09-05T02:20:31.795Z - success: protocol unpack registerred
+2018-09-05T02:20:31.795Z - success: protocol disable-commonjs registerred
+2018-09-05T02:20:32.060Z - normal: connected!
+2018-09-05T02:20:32.060Z - normal: Check project E:\study\CocosProject\2048_Fight
+2018-09-05T02:20:32.060Z - normal: Initializing Cocos2d
+2018-09-05T02:20:33.489Z - normal: Initializing Asset Database
+2018-09-05T02:20:33.617Z - success: protocol uuid registerred
+2018-09-05T02:20:33.617Z - success: protocol db registerred
+2018-09-05T02:20:33.617Z - success: protocol thumbnail registerred
+2018-09-05T02:20:33.617Z - normal: Loading editor/builtin packages
+2018-09-05T02:20:33.686Z - success: anysdk loaded
+2018-09-05T02:20:33.890Z - success: assets loaded
+2018-09-05T02:20:33.893Z - success: builder loaded
+2018-09-05T02:20:33.896Z - success: cocos-analytics loaded
+2018-09-05T02:20:33.900Z - success: console loaded
+2018-09-05T02:20:33.904Z - success: hierarchy loaded
+2018-09-05T02:20:33.908Z - success: inspector loaded
+2018-09-05T02:20:33.911Z - success: keystore loaded
+2018-09-05T02:20:33.914Z - success: node-library loaded
+2018-09-05T02:20:33.917Z - success: package-asset loaded
+2018-09-05T02:20:33.930Z - success: preferences loaded
+2018-09-05T02:20:33.934Z - success: project-exporter loaded
+2018-09-05T02:20:33.952Z - success: project-importer loaded
+2018-09-05T02:20:33.962Z - success: project-settings loaded
+2018-09-05T02:20:33.962Z - success: ui-kit loaded
+2018-09-05T02:20:33.962Z - success: ui-grid loaded
+2018-09-05T02:20:33.976Z - success: scene loaded
+2018-09-05T02:20:33.978Z - success: sprite-editor loaded
+2018-09-05T02:20:33.982Z - success: store loaded
+2018-09-05T02:20:33.988Z - success: timeline loaded
+2018-09-05T02:20:33.988Z - normal: Loading builtin packages
+2018-09-05T02:20:34.000Z - success: asset-db-debugger loaded
+2018-09-05T02:20:34.002Z - success: code-editor loaded
+2018-09-05T02:20:34.013Z - success: color-picker loaded
+2018-09-05T02:20:34.015Z - success: package-manager loaded
+2018-09-05T02:20:34.020Z - success: sdkbox loaded
+2018-09-05T02:20:34.024Z - success: tester loaded
+2018-09-05T02:20:34.027Z - success: ui-kit-preview-extra loaded
+2018-09-05T02:20:34.028Z - success: ui-kit-preview loaded
+2018-09-05T02:20:34.030Z - success: ui-tree loaded
+2018-09-05T02:20:36.049Z - normal: Initializing project E:\study\CocosProject\2048_Fight
+2018-09-05T02:20:36.075Z - normal: Loading packages
+2018-09-05T02:20:36.079Z - normal: Watching packages
+2018-09-05T02:20:36.109Z - normal: Run Application
+2018-09-05T02:20:38.714Z - success: preview server running at http://localhost:7456
+2018-09-05T02:20:46.124Z - normal: 1.8.1
+2018-09-05T03:27:34.249Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unexpected token, expected , (31:23)
+  29 |             type:[cc.Node]
+  30 |         },
+> 31 |         timeOut = false;
+     |                        ^
+  32 | 
+  33 |         // foo: {
+  34 |         //     // ATTRIBUTES:
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2018-09-05T03:32:21.605Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unsyntactic break (170:34)
+  168 |     onKeyDown (event) {
+  169 |         // set a flag when key pressed
+> 170 |         if(this.timeOut == false) break;  //屏蔽输入
+      |                                   ^
+  171 |         else {
+  172 |             this.randomCreate(); 
+  173 |         }
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp$1.parseBreakContinueStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1970:44)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1830:19)
+    at Parser.pp$1.parseIfStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2059:26)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
+    at Parser.pp$1.parseBlockBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseBlock (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
+    at Parser.pp$3.parseFunctionBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp$3.parseMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4180:8)
+    at Parser.pp$3.parseObjectMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4097:10)
+2018-09-05T03:32:47.685Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unsyntactic break (170:34)
+  168 |     onKeyDown (event) {
+  169 |         // set a flag when key pressed
+> 170 |         if(this.timeOut == false) break;  //屏蔽输入
+      |                                   ^
+  171 |         else {
+  172 |             this.randomCreate(); 
+  173 |         }
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp$1.parseBreakContinueStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1970:44)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1830:19)
+    at Parser.pp$1.parseIfStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2059:26)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
+    at Parser.pp$1.parseBlockBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseBlock (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
+    at Parser.pp$3.parseFunctionBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp$3.parseMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4180:8)
+    at Parser.pp$3.parseObjectMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4097:10)
+2018-09-05T03:34:34.708Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unsyntactic break (170:34)
+  168 |     onKeyDown (event) {
+  169 |         // set a flag when key pressed
+> 170 |         if(this.timeOut == false) break;  //屏蔽输入
+      |                                   ^
+  171 |         switch(event.keyCode) {
+  172 |             case cc.KEY.s:
+  173 |                 this.moveDown();
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp$1.parseBreakContinueStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1970:44)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1830:19)
+    at Parser.pp$1.parseIfStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2059:26)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
+    at Parser.pp$1.parseBlockBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseBlock (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
+    at Parser.pp$3.parseFunctionBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp$3.parseMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4180:8)
+    at Parser.pp$3.parseObjectMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4097:10)
+2018-09-05T03:35:06.669Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unsyntactic break (170:34)
+  168 |     onKeyDown (event) {
+  169 |         // set a flag when key pressed
+> 170 |         if(this.timeOut == false) break;  //屏蔽输入
+      |                                   ^
+  171 |         switch(event.keyCode) {
+  172 |             case cc.KEY.s:
+  173 |                 this.moveDown();
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp$1.parseBreakContinueStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1970:44)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1830:19)
+    at Parser.pp$1.parseIfStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2059:26)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
+    at Parser.pp$1.parseBlockBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseBlock (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
+    at Parser.pp$3.parseFunctionBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp$3.parseMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4180:8)
+    at Parser.pp$3.parseObjectMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4097:10)
+2018-09-05T03:35:47.693Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unsyntactic break (170:34)
+  168 |     onKeyDown (event) {
+  169 |         // set a flag when key pressed
+> 170 |         if(this.timeOut == false) break;  //屏蔽输入
+      |                                   ^
+  171 |         switch(event.keyCode) {
+  172 |             case cc.KEY.s:
+  173 |                 this.moveDown();
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp$1.parseBreakContinueStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1970:44)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1830:19)
+    at Parser.pp$1.parseIfStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2059:26)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
+    at Parser.pp$1.parseBlockBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseBlock (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
+    at Parser.pp$3.parseFunctionBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp$3.parseMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4180:8)
+    at Parser.pp$3.parseObjectMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4097:10)
+2018-09-05T03:36:28.482Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unsyntactic break (170:34)
+  168 |     onKeyDown (event) {
+  169 |         // set a flag when key pressed
+> 170 |         if(this.timeOut == false) break;  //屏蔽输入
+      |                                   ^
+  171 |         switch(event.keyCode) {
+  172 |             case cc.KEY.s:
+  173 |                 this.moveDown();
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp$1.parseBreakContinueStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1970:44)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1830:19)
+    at Parser.pp$1.parseIfStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2059:26)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
+    at Parser.pp$1.parseBlockBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseBlock (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
+    at Parser.pp$3.parseFunctionBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp$3.parseMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4180:8)
+    at Parser.pp$3.parseObjectMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4097:10)
+2018-09-05T03:37:05.657Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\Game.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/Game.js: Unsyntactic break (170:34)
+  168 |     onKeyDown (event) {
+  169 |         // set a flag when key pressed
+> 170 |         if(this.timeOut == false) break;  //屏蔽输入
+      |                                   ^
+  171 |         switch(event.keyCode) {
+  172 |             case cc.KEY.s:
+  173 |                 this.moveDown();
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp$1.parseBreakContinueStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1970:44)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1830:19)
+    at Parser.pp$1.parseIfStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2059:26)
+    at Parser.pp$1.parseStatement (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1846:19)
+    at Parser.pp$1.parseBlockBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2268:21)
+    at Parser.pp$1.parseBlock (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:2247:8)
+    at Parser.pp$3.parseFunctionBody (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4235:22)
+    at Parser.pp$3.parseMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4180:8)
+    at Parser.pp$3.parseObjectMethod (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4097:10)
+2018-09-05T04:25:12.957Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:97899
+2018-09-05T04:25:12.959Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:97902
+2018-09-05T04:25:12.960Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:97905
+2018-09-05T04:25:12.960Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:97907
+2018-09-05T04:30:25.220Z - error: Can't generate child path for node.
+    at Object.showTrajectoryGizmo (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3665)
+    at Object.activate (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4320)
+    at Object.activate (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:17882)
+    at HTMLElement.selection:activated (file:///D:/Program%20Files/CocosCreator/resources/app.asar/editor/builtin/scene/panel/scene.js:1:14048)
+    at EventEmitter.e.on.t (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\polymer-utils.js:1:353)
+    at emitThree (events.js:121:20)
+    at EventEmitter.emit (events.js:197:7)
+2018-09-05T04:31:14.611Z - error: The thing you want to instantiate is destroyed
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:338:24)
+    at Object.instantiate (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\instantiate.js:70:20)
+    at Object.PrefabUtils.getDumpableNode (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:4148)
+    at Object.PrefabUtils.createAppliedPrefab (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:4849)
+    at Object.applyPrefab (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:15866)
+    at Object.save (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:2800)
+    at Object.close (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:2191)
+    at Object._pop (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:1357)
+    at _queue.Async.queue (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\tasks.js:1:551)
+2018-09-05T04:31:14.611Z - failed: Task [pop-edit-mode:[undefined]] run error, stop running other tasks.
+ TypeError: Cannot read property '_components' of null
+    at visitObjTypeProperties (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:589)
+    at D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:4187
+    at visitNode (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:197)
+    at Object.PrefabUtils.getDumpableNode (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:4163)
+    at Object.PrefabUtils.createAppliedPrefab (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-utils.js:1:4849)
+    at Object.applyPrefab (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:15866)
+    at Object.save (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:2800)
+    at Object.close (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\prefab-edit-mode.js:1:2191)
+    at Object._pop (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\edit-mode.js:1:1357)
+    at _queue.Async.queue (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\tasks.js:1:551)
+2018-09-05T05:01:04.287Z - error: Can't generate child path for node.
+    at Object.showTrajectoryGizmo (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3665)
+    at Object.activate (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4320)
+    at Object.activate (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:17882)
+    at HTMLElement.selection:activated (file:///D:/Program%20Files/CocosCreator/resources/app.asar/editor/builtin/scene/panel/scene.js:1:14048)
+    at EventEmitter.e.on.t (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\polymer-utils.js:1:353)
+    at emitThree (events.js:121:20)
+    at EventEmitter.emit (events.js:197:7)
+2018-09-05T05:01:20.198Z - error: Can't generate child path for node.
+    at Object.showTrajectoryGizmo (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:3665)
+    at Object.activate (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\anim-utils.js:1:4320)
+    at Object.activate (D:\Program Files\CocosCreator\resources\app.asar\editor\page\scene-utils\index.js:1:17882)
+    at HTMLElement.selection:activated (file:///D:/Program%20Files/CocosCreator/resources/app.asar/editor/builtin/scene/panel/scene.js:1:14048)
+    at EventEmitter.e.on.t (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\polymer-utils.js:1:353)
+    at emitThree (events.js:121:20)
+    at EventEmitter.emit (events.js:197:7)

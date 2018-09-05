@@ -33,7 +33,8 @@ var Square = cc.Class({
         },
         tempTarget: 0,
         toDouble: false,
-        toDestroyed: false
+        toDestroyed: false,
+        moveSpeed: 0.4
         // foo: {
         //     // ATTRIBUTES:
         //     default: null,        // The default value will be used only when the component attaching
@@ -53,7 +54,7 @@ var Square = cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
     move: function move() {
-        var action = cc.moveTo(0.5, this.gameScript.positionList[this.tempTarget]);
+        var action = cc.moveTo(this.moveSpeed, this.gameScript.positionList[this.tempTarget].getPosition());
         // 执行动作
         this.node.runAction(action);
     },

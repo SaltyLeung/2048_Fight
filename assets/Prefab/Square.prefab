@@ -26,10 +26,13 @@
       },
       {
         "__id__": 6
+      },
+      {
+        "__id__": 7
       }
     ],
     "_prefab": {
-      "__id__": 7
+      "__id__": 8
     },
     "_id": "",
     "_opacity": 255,
@@ -53,8 +56,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0,
+    "_scaleY": 0,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 284,
@@ -190,7 +193,32 @@
     "_enabled": true,
     "number": 0,
     "numLabel": null,
-    "Game": null
+    "gameNode": null,
+    "gameScript": null,
+    "tempTarget": 0,
+    "toDouble": false,
+    "toDestroyed": false
+  },
+  {
+    "__type__": "cc.Animation",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "_defaultClip": {
+      "__uuid__": "ca23f331-ed29-4894-a3a7-2370ed7bef41"
+    },
+    "_clips": [
+      {
+        "__uuid__": "ca23f331-ed29-4894-a3a7-2370ed7bef41"
+      },
+      {
+        "__uuid__": "48df96fe-1abe-4bd7-82be-cba18789f215"
+      }
+    ],
+    "playOnLoad": false
   },
   {
     "__type__": "cc.PrefabInfo",
