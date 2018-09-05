@@ -20,7 +20,7 @@ var Game = cc.Class({
     extends: cc.Component,
 
     properties: {
-        destroySpeed: 5,
+        destroySpeed: 2,
         //fadeSpeed: 0.4,
         timeOut: true,
         squarePrefab: {
@@ -105,6 +105,7 @@ var Game = cc.Class({
         }
     },
     moveDown: function moveDown() {
+        var hasBeenMove = false;
         /*for(var i = 0; i < 16; ++i) {
             this.eatableList[i] = true;
         }
@@ -123,6 +124,7 @@ var Game = cc.Class({
                 for (var k = j - 4; k >= 0; k -= 4) {
                     //计算目标
                     if (this.positionList[k].number == 0) {
+                        hasBeenMove = true;
                         targetIndex = k;
                         //hasHole[Math.floor(j/4)] = true; 
                         //this.positionList[k].number = this.positionList[j].number; 
@@ -131,6 +133,7 @@ var Game = cc.Class({
                     }
                     // else if(hasHole[Math.floor(k/4)] == true) { targetIndex = k; hasHole[Math.floor(j/4)] = true; continue; }
                     else if (this.positionList[k].number == this.positionList[j].number && hasMerge[Math.floor(k / 4)] == false) {
+                            hasBeenMove = true;
                             targetIndex = k;
                             // hasHole[Math.floor(j/4)] = true; 
                             hasMerge[Math.floor(k / 4)] = true;
@@ -156,9 +159,7 @@ var Game = cc.Class({
         } //物理移动（逻辑上还没移动），移动后下标为source，target为目标
         for (var i = 0; i < 16; ++i) {
             if (this.moveableList[i] != null && this.moveableList[i].getComponent(require("Square")).toDestroyed == true) {
-                console.log("Destroy" + this.moveableList[i].getPosition());this.moveableList[i].getComponent(cc.Animation).play("2048Fade");var temp = this.moveableList[i];setTimeout(function () {
-                    temp.destroy();
-                }, this.destroySpeed);this.moveableList[i] = null;
+                this.moveableList[i].getComponent(cc.Animation).play("2048Fade");this.moveableList[i] = null;
             }
         } //删除多余卡片 
 
@@ -171,7 +172,8 @@ var Game = cc.Class({
             this.moveableList[j] = null;
         }for (var i = 0; i < 16; ++i) {
             if (tempList[i] != null) {
-                console.log("TYpe" + _typeof(tempList[i].getComponent(require("Square")).tempTarget));this.moveableList[tempList[i].getComponent(require("Square")).tempTarget] = tempList[i];
+                //console.log("TYpe"+typeof(tempList[i].getComponent(require("Square")).tempTarget));
+                this.moveableList[tempList[i].getComponent(require("Square")).tempTarget] = tempList[i];
             }
         } //moveableList复位
         //for(var j = 0; j < 16; ++j)console.log("mList(aftertemp)"+j+" : "+this.moveableList[j]);
@@ -184,18 +186,232 @@ var Game = cc.Class({
             }else  this.positionList[i].number = this.moveableList[i].getComponent(require("Square")).number;*/
             if (this.moveableList[i] != null) this.moveableList[i].getComponent(require("Square")).number = this.positionList[i].number;
         } //维护positionList
+        return hasBeenMove;
+    },
+
+    /*onKeyDown (event) {
+        // set a flag when key pressed
+        if(this.timeOut == false) return;  //屏蔽输入
+        switch(event.keyCode) {
+            case cc.KEY.s:
+                if(this.moveDown() == false) return;
+                this.timeOut = false;
+                this.scheduleOnce(function() {this.timeOut = true;this.randomCreate();console.log("sca");},0.5);
+                //for(var i = 0; i < 16; ++i) console.log(this.moveableList[i]);
+                break;
+        }
+    },*/
+    moveUp: function moveUp() {
+        var hasBeenMove = false;
+        for (var i = 12; i < 16; ++i) {
+            //列
+            for (var j = i; j >= 0; j -= 4) {
+                //每列中每个
+                if (this.moveableList[j] == null) continue;
+                var hasMerge = [false, false, false, false];
+                var targetIndex = j;
+                var isMerge = false;
+                for (var k = j + 4; k < 16; k += 4) {
+                    //计算目标
+                    if (this.positionList[k].number == 0) {
+                        hasBeenMove = true;
+                        targetIndex = k;
+                        continue;
+                    } else if (this.positionList[k].number == this.positionList[j].number && hasMerge[Math.floor(k / 4)] == false) {
+                        hasBeenMove = true;
+                        targetIndex = k;
+                        hasMerge[Math.floor(k / 4)] = true;
+                        this.moveableList[j].getComponent(require("Square")).toDestroyed = true;
+                        isMerge = true;
+                        break;
+                    } else break;
+                }
+                this.moveableList[j].getComponent(require("Square")).tempTarget = targetIndex;
+                var temp = this.positionList[j].number;
+                this.positionList[j].number = 0;
+                this.positionList[targetIndex].number = temp;
+                if (isMerge == true) this.positionList[targetIndex].number *= 2;
+            }
+        }
+
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null) this.moveableList[i].getComponent(require("Square")).move();
+        } //物理移动（逻辑上还没移动），移动后下标为source，target为目标
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null && this.moveableList[i].getComponent(require("Square")).toDestroyed == true) {
+                this.moveableList[i].getComponent(cc.Animation).play("2048Fade");
+                this.moveableList[i] = null;
+            }
+        } //删除多余卡片 
+
+        var tempList = new Array();
+        for (var j = 0; j < 16; ++j) {
+            tempList[j] = this.moveableList[j];
+        }for (var j = 0; j < 16; ++j) {
+            this.moveableList[j] = null;
+        }for (var i = 0; i < 16; ++i) {
+            if (tempList[i] != null) {
+                //console.log("TYpe"+typeof(tempList[i].getComponent(require("Square")).tempTarget));
+                this.moveableList[tempList[i].getComponent(require("Square")).tempTarget] = tempList[i];
+            }
+        } //moveableList复位
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null) this.moveableList[i].getComponent(require("Square")).number = this.positionList[i].number;
+        } //维护positionList
+        return hasBeenMove;
+    },
+    moveLeft: function moveLeft() {
+        var hasBeenMove = false;
+        for (var i = 0; i <= 12; i += 4) {
+            //列
+            for (var j = i; j < i + 4; ++j) {
+                //每列中每个
+                if (this.moveableList[j] == null) continue;
+                var hasMerge = [false, false, false, false];
+                var targetIndex = j;
+                var isMerge = false;
+                for (var k = j - 1; k >= i; --k) {
+                    //计算目标
+                    if (this.positionList[k].number == 0) {
+                        hasBeenMove = true;
+                        targetIndex = k;
+                        continue;
+                    } else if (this.positionList[k].number == this.positionList[j].number && hasMerge[Math.floor(k / 4)] == false) {
+                        hasBeenMove = true;
+                        targetIndex = k;
+                        hasMerge[Math.floor(k / 4)] = true;
+                        this.moveableList[j].getComponent(require("Square")).toDestroyed = true;
+                        isMerge = true;
+                        break;
+                    } else break;
+                }
+                this.moveableList[j].getComponent(require("Square")).tempTarget = targetIndex;
+                var temp = this.positionList[j].number;
+                this.positionList[j].number = 0;
+                this.positionList[targetIndex].number = temp;
+                if (isMerge == true) this.positionList[targetIndex].number *= 2;
+            }
+        }
+
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null) this.moveableList[i].getComponent(require("Square")).move();
+        } //物理移动（逻辑上还没移动），移动后下标为source，target为目标
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null && this.moveableList[i].getComponent(require("Square")).toDestroyed == true) {
+                this.moveableList[i].getComponent(cc.Animation).play("2048Fade");
+                this.moveableList[i] = null;
+            }
+        } //删除多余卡片 
+
+        var tempList = new Array();
+        for (var j = 0; j < 16; ++j) {
+            tempList[j] = this.moveableList[j];
+        }for (var j = 0; j < 16; ++j) {
+            this.moveableList[j] = null;
+        }for (var i = 0; i < 16; ++i) {
+            if (tempList[i] != null) {
+                console.log("TYpe" + _typeof(tempList[i].getComponent(require("Square")).tempTarget));
+                this.moveableList[tempList[i].getComponent(require("Square")).tempTarget] = tempList[i];
+            }
+        } //moveableList复位
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null) this.moveableList[i].getComponent(require("Square")).number = this.positionList[i].number;
+        } //维护positionList
+        return hasBeenMove;
+    },
+    moveRight: function moveRight() {
+        var hasBeenMove = false;
+        for (var i = 3; i <= 15; i += 4) {
+            //列
+            for (var j = i; j > i - 4; --j) {
+                //每列中每个
+                if (this.moveableList[j] == null) continue;
+                var hasMerge = [false, false, false, false];
+                var targetIndex = j;
+                var isMerge = false;
+                for (var k = j + 1; k <= i; ++k) {
+                    //计算目标
+                    if (this.positionList[k].number == 0) {
+                        hasBeenMove = true;
+                        targetIndex = k;
+                        continue;
+                    } else if (this.positionList[k].number == this.positionList[j].number && hasMerge[Math.floor(k / 4)] == false) {
+                        hasBeenMove = true;
+                        targetIndex = k;
+                        hasMerge[Math.floor(k / 4)] = true;
+                        this.moveableList[j].getComponent(require("Square")).toDestroyed = true;
+                        isMerge = true;
+                        break;
+                    } else break;
+                }
+                this.moveableList[j].getComponent(require("Square")).tempTarget = targetIndex;
+                var temp = this.positionList[j].number;
+                this.positionList[j].number = 0;
+                this.positionList[targetIndex].number = temp;
+                if (isMerge == true) this.positionList[targetIndex].number *= 2;
+            }
+        }
+
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null) this.moveableList[i].getComponent(require("Square")).move();
+        } //物理移动（逻辑上还没移动），移动后下标为source，target为目标
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null && this.moveableList[i].getComponent(require("Square")).toDestroyed == true) {
+                this.moveableList[i].getComponent(cc.Animation).play("2048Fade");
+                this.moveableList[i] = null;
+            }
+        } //删除多余卡片 
+
+        var tempList = new Array();
+        for (var j = 0; j < 16; ++j) {
+            tempList[j] = this.moveableList[j];
+        }for (var j = 0; j < 16; ++j) {
+            this.moveableList[j] = null;
+        }for (var i = 0; i < 16; ++i) {
+            if (tempList[i] != null) {
+                console.log("TYpe" + _typeof(tempList[i].getComponent(require("Square")).tempTarget));
+                this.moveableList[tempList[i].getComponent(require("Square")).tempTarget] = tempList[i];
+            }
+        } //moveableList复位
+        for (var i = 0; i < 16; ++i) {
+            if (this.moveableList[i] != null) this.moveableList[i].getComponent(require("Square")).number = this.positionList[i].number;
+        } //维护positionList
+        return hasBeenMove;
     },
     onKeyDown: function onKeyDown(event) {
         // set a flag when key pressed
         if (this.timeOut == false) return; //屏蔽输入
         switch (event.keyCode) {
             case cc.KEY.s:
-                this.moveDown();
+                if (this.moveDown() == false) return;
                 this.timeOut = false;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();console.log("sca");
                 }, 0.5);
                 //for(var i = 0; i < 16; ++i) console.log(this.moveableList[i]);
+                break;
+            case cc.KEY.w:
+                if (this.moveUp() == false) return;
+                this.timeOut = false;
+                this.scheduleOnce(function () {
+                    this.timeOut = true;this.randomCreate();console.log("sca");
+                }, 0.5);
+                break;
+            case cc.KEY.d:
+                if (this.moveRight() == false) return;
+                this.timeOut = false;
+                this.scheduleOnce(function () {
+                    this.timeOut = true;this.randomCreate();console.log("sca");
+                }, 0.5);
+                break;
+            case cc.KEY.a:
+                if (this.moveLeft() == false) return;
+                this.timeOut = false;
+                this.scheduleOnce(function () {
+                    this.timeOut = true;this.randomCreate();console.log("sca");
+                }, 0.5);
+                break;
+            default:
                 break;
         }
     },

@@ -285,8 +285,8 @@
     "relativePath": "Scene\\Game.fire"
   },
   "ca23f331-ed29-4894-a3a7-2370ed7bef41": {
-    "asset": 1536121729785,
-    "meta": 1536121729814,
+    "asset": 1536135272036,
+    "meta": 1536135272071,
     "relativePath": "Animation\\2048Fade.anim"
   },
   "48df96fe-1abe-4bd7-82be-cba18789f215": {
@@ -295,13 +295,13 @@
     "relativePath": "Animation\\2048Show.anim"
   },
   "69f1a3d7-39d6-47c6-9846-e7d1521efbdc": {
-    "asset": 1536123857724,
-    "meta": 1536123858314,
+    "asset": 1536137474165,
+    "meta": 1536137476209,
     "relativePath": "Script\\Game.js"
   },
   "cada9bb7-11de-4bc1-9c7f-c244477e4149": {
-    "asset": 1536124240133,
-    "meta": 1536124268729,
+    "asset": 1536137028271,
+    "meta": 1536137476212,
     "relativePath": "Script\\Square.js"
   }
 }

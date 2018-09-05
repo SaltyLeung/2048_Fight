@@ -67,14 +67,16 @@ var Square = cc.Class({
         //console.log(this.numLabel.getComponent(cc.Label));
 
     },
-    down: function down(currIndex) {
+
+    /*down(currIndex) {
         var targetIndex = currIndex;
-        for (var i = currIndex - 4; i > 0; i -= 4) {
-            if (gameScript.positionList[i].number == 0) targetIndex = i;else if (this.number == this.gameScript.positionList[i].number && this.gameScript.eatableList[i] == true) {
-                this.gameScript.eat(currIndex, i, this.node);
-            }
+        for(var i = currIndex - 4; i > 0; i-= 4) 
+        if(gameScript.positionList[i].number == 0) targetIndex = i;
+        else if((this.number == this.gameScript.positionList[i].number) && this.gameScript.eatableList[i] == true)  {
+            this.gameScript.eat(currIndex, i, this.node);
         }
-    },
+    },*/
+
     update: function update(dt) {
         this.numLabel.getComponent(cc.Label).string = this.number.toString();
     }
