@@ -4,8 +4,6 @@ cc._RF.push(module, '69f1aPXOdZHxphG59FSHvvc', 'Game', __filename);
 
 "use strict";
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 // Learn cc.Class:
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/class.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/class/index.html
@@ -96,9 +94,7 @@ var Game = cc.Class({
                 this.vsController.p2Win();return;
             }
         }
-        if (emptyPos.length == 0) {
-            this.gameOver = true;return;
-        }
+
         var index = Math.floor(Math.random() * emptyPos.length);
 
         //随机生成2或4
@@ -117,13 +113,15 @@ var Game = cc.Class({
         this.positionList[emptyPos[index]].number = newValue;
         this.moveableList[emptyPos[index]] = newSquare;
         console.log("----------");
+        console.log(this.gameOver);
+        if (emptyPos.length == 1) {
+            if (!this.checkAlive()) {
+                this.gameOver = true;console.log("GameOver");
+            } else console.log("Game Continue");
+        }
         //console.log(emptyPos[index]);
-        for (var i = 0; i < 16; ++i) {
-            if (this.moveableList[i] != null) console.log("moveableNum" + i + ": " + this.moveableList[i].getPosition());
-        }
-        for (var i = 0; i < 16; ++i) {
-            console.log("position" + i + ": " + this.positionList[i].number);
-        }
+        //for(var i = 0; i < 16; ++i) { if(this.moveableList[i]!=null) console.log("moveableNum"+i+": "+this.moveableList[i].getPosition());}
+        //for(var i = 0; i < 16; ++i) {console.log("position"+i+": "+this.positionList[i].number);}
     },
     moveDown: function moveDown() {
         var hasBeenMove = false;
@@ -331,7 +329,7 @@ var Game = cc.Class({
             this.moveableList[j] = null;
         }for (var i = 0; i < 16; ++i) {
             if (tempList[i] != null) {
-                console.log("TYpe" + _typeof(tempList[i].getComponent(require("Square")).tempTarget));
+                //console.log("TYpe"+typeof(tempList[i].getComponent(require("Square")).tempTarget));
                 this.moveableList[tempList[i].getComponent(require("Square")).tempTarget] = tempList[i];
             }
         } //moveableList复位
@@ -390,7 +388,7 @@ var Game = cc.Class({
             this.moveableList[j] = null;
         }for (var i = 0; i < 16; ++i) {
             if (tempList[i] != null) {
-                console.log("TYpe" + _typeof(tempList[i].getComponent(require("Square")).tempTarget));
+                //console.log("TYpe"+typeof(tempList[i].getComponent(require("Square")).tempTarget));
                 this.moveableList[tempList[i].getComponent(require("Square")).tempTarget] = tempList[i];
             }
         } //moveableList复位
@@ -473,24 +471,37 @@ var Game = cc.Class({
             default:
                 break;
         }return true;
+    },
+    checkAlive: function checkAlive() {
+        //var isAlive = false;
+        for (var i = 0; i < 16; ++i) {
+            if (i % 4 == 3) continue;
+            if (this.positionList[i + 1] != undefined && this.positionList[i + 1].number == this.positionList[i].number) return true;
+            //if((this.positionList[i-1] != undefined) && (this.positionList[i-1].number == this.positionList[i].number)) return true;
+            //if((this.positionList[i-4] != undefined) && (this.positionList[i-4].number == this.positionList[i].number)) return true;
+            if (this.positionList[i + 4] != undefined && this.positionList[i + 4].number == this.positionList[i].number) return true;
+        }
+        for (var i = 3; i <= 11; i += 4) {
+            if (this.positionList[i].number == this.positionList[i + 4].number) return true;
+        }return false;
     }
-}
-/*eat(source, target, newNode) {
-    this.moveableList[target].destroy();
-    this.moveableList[target] = this.moveableList[source];
-    this.moveableList[source] = null;
-      this.eatableList[target] = false;
-      this.positionList[source].number = 0;
-    this.positionList[target].number *= 2;
-    
-},*/
+    /*eat(source, target, newNode) {
+        this.moveableList[target].destroy();
+        this.moveableList[target] = this.moveableList[source];
+        this.moveableList[source] = null;
+          this.eatableList[target] = false;
+          this.positionList[source].number = 0;
+        this.positionList[target].number *= 2;
+        
+    },*/
 
-/*gameOver() {
-    
-}*/
+    /*gameOver() {
+        
+    }*/
 
-// update (dt) {},
-);
+    // update (dt) {},
+
+});
 
 module.exports = Game;
 

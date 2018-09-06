@@ -1,0 +1,745 @@
+2018-09-06T01:39:48.033Z - normal: Load ~/.CocosCreator/settings.json
+2018-09-06T01:39:48.046Z - normal: checking language setting...
+2018-09-06T01:39:48.047Z - normal: Language: zh
+2018-09-06T01:39:53.994Z - success: protocol editor-framework registered
+2018-09-06T01:39:53.995Z - success: protocol app registered
+2018-09-06T01:39:53.995Z - success: protocol theme registered
+2018-09-06T01:39:53.995Z - success: protocol packages registered
+2018-09-06T01:39:53.995Z - success: protocol unpack registerred
+2018-09-06T01:39:53.995Z - success: protocol disable-commonjs registerred
+2018-09-06T01:39:54.223Z - normal: connected!
+2018-09-06T01:39:54.226Z - normal: Check project E:\study\CocosProject\2048_Fight
+2018-09-06T01:39:54.241Z - normal: Initializing Cocos2d
+2018-09-06T01:39:55.712Z - normal: Initializing Asset Database
+2018-09-06T01:39:55.840Z - success: protocol uuid registerred
+2018-09-06T01:39:55.840Z - success: protocol db registerred
+2018-09-06T01:39:55.840Z - success: protocol thumbnail registerred
+2018-09-06T01:39:55.840Z - normal: Loading editor/builtin packages
+2018-09-06T01:39:55.913Z - success: anysdk loaded
+2018-09-06T01:39:56.123Z - success: assets loaded
+2018-09-06T01:39:56.126Z - success: builder loaded
+2018-09-06T01:39:56.129Z - success: cocos-analytics loaded
+2018-09-06T01:39:56.133Z - success: console loaded
+2018-09-06T01:39:56.137Z - success: hierarchy loaded
+2018-09-06T01:39:56.141Z - success: inspector loaded
+2018-09-06T01:39:56.142Z - success: keystore loaded
+2018-09-06T01:39:56.145Z - success: node-library loaded
+2018-09-06T01:39:56.153Z - success: package-asset loaded
+2018-09-06T01:39:56.169Z - success: preferences loaded
+2018-09-06T01:39:56.170Z - success: project-exporter loaded
+2018-09-06T01:39:56.188Z - success: project-importer loaded
+2018-09-06T01:39:56.190Z - success: project-settings loaded
+2018-09-06T01:39:56.193Z - success: ui-kit loaded
+2018-09-06T01:39:56.203Z - success: ui-grid loaded
+2018-09-06T01:39:56.206Z - success: scene loaded
+2018-09-06T01:39:56.208Z - success: sprite-editor loaded
+2018-09-06T01:39:56.211Z - success: store loaded
+2018-09-06T01:39:56.217Z - success: timeline loaded
+2018-09-06T01:39:56.217Z - normal: Loading builtin packages
+2018-09-06T01:39:56.223Z - success: asset-db-debugger loaded
+2018-09-06T01:39:56.225Z - success: code-editor loaded
+2018-09-06T01:39:56.235Z - success: color-picker loaded
+2018-09-06T01:39:56.237Z - success: package-manager loaded
+2018-09-06T01:39:56.241Z - success: sdkbox loaded
+2018-09-06T01:39:56.245Z - success: tester loaded
+2018-09-06T01:39:56.248Z - success: ui-kit-preview-extra loaded
+2018-09-06T01:39:56.250Z - success: ui-kit-preview loaded
+2018-09-06T01:39:56.251Z - success: ui-tree loaded
+2018-09-06T01:39:58.307Z - normal: Initializing project E:\study\CocosProject\2048_Fight
+2018-09-06T01:39:58.344Z - normal: Loading packages
+2018-09-06T01:39:58.349Z - normal: Watching packages
+2018-09-06T01:39:58.393Z - normal: Run Application
+2018-09-06T01:40:00.337Z - success: preview server running at http://localhost:7456
+2018-09-06T01:40:07.855Z - normal: 1.8.1
+2018-09-06T01:40:08.522Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T01:43:12.775Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T01:44:40.101Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T01:46:02.656Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T01:55:01.408Z - failed: [db-task][sync-changes] Failed to import asset E:\study\CocosProject\2048_Fight\assets\Script\SlideControl.js, message: Compile error: SyntaxError: E:/study/CocosProject/2048_Fight/assets/Script/SlideControl.js: Unexpected token (74:11)
+  72 |     onTouchMove() {
+  73 |         var moveVec = event.getLocation().sub(this.touchStartLocation);
+> 74 |         if()
+     |            ^
+  75 |     }
+  76 | 
+  77 |     // update (dt) {},
+    at Parser.pp$5.raise (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp$3.parseExprAtom (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3750:12)
+    at Parser.pp$3.parseExprSubscripts (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+    at Parser.pp$3.parseExpression (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3306:19)
+    at Parser.pp$3.parseParenExpression (D:\Program Files\CocosCreator\resources\app.asar\node_modules\babylon\lib\index.js:3789:18)
+2018-09-06T02:03:22.874Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T02:05:09.232Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T02:05:24.470Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T02:06:05.386Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T02:06:31.339Z - error: Can not declare Game.gameOver method, it is already defined in the properties of Game.
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at Object.exports.doValidateMethodWithProps_DEV (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:272:16)
+    at Object.exports.validateMethodWithProps (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\preprocess-class.js:291:18)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:968:25)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:19:15)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:491:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:498:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\Game.js:501:3)
+    at Module._compile (module.js:571:32)
+2018-09-06T02:45:16.924Z - error: Failed to reset layout: Error: Failed to close panel scene
+    at Object.Panel._unloadAll (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\panel.js:1:2459)
+    at Async.waterfall.e (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:8071)
+    at fn (D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:746:34)
+    at D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:1213:16
+    at D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:166:37
+    at D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:706:43
+    at D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
+    at Object.async.waterfall (D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:710:44)
+    at Object.DockUtils.reset (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:8050)
+    at EventEmitter.ipcRenderer.on (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:9933)
+    at DockUtils.reset.e (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:9971)
+    at Async.waterfall.e (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\dock-utils.js:1:9060)
+    at D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:52:16
+    at D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:696:30
+    at D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:167:37
+    at Immediate.<anonymous> (D:\Program Files\CocosCreator\resources\app.asar\node_modules\async\lib\async.js:1206:34)
+    at runCallback (timers.js:672:20)
+    at tryOnImmediate (timers.js:645:5)
+    at processImmediate [as _immediateCallback] (timers.js:617:5)
+2018-09-06T03:23:01.097Z - warn: The 'type' attribute of 'VSController.restart' is undefined when loading script
+2018-09-06T03:27:43.299Z - warn: The 'type' attribute of 'VSController.restart' is undefined when loading script
+2018-09-06T03:36:55.439Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:36:55.442Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:37:12.910Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:37:12.911Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:37:32.601Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:37:48.811Z - failed: load script [game] failed : Error: Cannot find module 'game'
+    at Module._resolveFilename (module.js:470:15)
+    at Function.Module._resolveFilename [as _resolveFilenameVendor] (D:\Program Files\CocosCreator\resources\electron.asar\common\reset-search-paths.js:35:12)
+    at Function.Module._resolveFilename (D:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:1361)
+    at Function.Module._load (module.js:418:25)
+    at Module.require (module.js:498:17)
+    at require (internal/module.js:20:19)
+    at Object.cc.require (D:\Program Files\CocosCreator\resources\app.asar\editor\page\project-scripts.js:1:967)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:1:354
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:52:19)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+2018-09-06T03:37:48.811Z - warn: The 'type' attribute of 'VSController.gameP1' is undefined when loading script
+2018-09-06T03:37:48.812Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:38:10.618Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:38:10.620Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:141:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:148:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:151:3)
+2018-09-06T03:39:26.470Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:152:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:159:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:3)
+2018-09-06T03:39:26.475Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:152:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:159:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:3)
+2018-09-06T03:42:03.980Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:152:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:159:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:3)
+2018-09-06T03:42:03.981Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:152:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:159:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:3)
+2018-09-06T03:42:47.148Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:152:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:159:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:3)
+2018-09-06T03:42:47.152Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:152:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:159:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:3)
+2018-09-06T03:45:44.107Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:155:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:165:3)
+2018-09-06T03:45:44.109Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:155:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:165:3)
+2018-09-06T03:46:49.914Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:155:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:165:3)
+2018-09-06T03:46:49.915Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:155:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:162:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:165:3)
+2018-09-06T03:50:37.099Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T03:50:37.100Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T03:51:21.578Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T03:51:21.578Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T03:51:58.380Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T03:51:58.381Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T03:53:10.905Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:53:27.761Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:53:47.531Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:53:55.619Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:54:10.109Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:54:28.721Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:55:05.345Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:55:05.550Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:56:11.218Z - error: scene 没有保存，请先保存相关信息再进行构建。
+    at Editor.Ipc.sendToPanel (eval at _evaluateAndCacheScript (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ui\utils\resource-mgr.js:1:1020), <anonymous>:1:14030)
+    at EventEmitter.ipcRenderer.on.n (D:\Program Files\CocosCreator\resources\app.asar\editor-framework\lib\renderer\ipc.js:1:4493)
+    at emitMany (events.js:127:13)
+    at EventEmitter.emit (events.js:204:7)
+2018-09-06T03:56:22.401Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\study\\CocosProject\\2048_Fight\\build",
+  "debug": false,
+  "dest": "E:\\study\\CocosProject\\2048_Fight\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "1f86761d-8268-4d90-b877-65de78d6d614"
+  ],
+  "sourceMaps": false,
+  "startScene": "1f86761d-8268-4d90-b877-65de78d6d614",
+  "template": "link",
+  "title": "2048Fight",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "8e5a64e0-27ed-44",
+  "zipCompressJs": true,
+  "project": "E:\\study\\CocosProject\\2048_Fight",
+  "projectName": "2048Fight",
+  "debugBuildWorker": false
+}
+2018-09-06T03:56:22.403Z - normal: Building E:\study\CocosProject\2048_Fight
+2018-09-06T03:56:22.403Z - normal: Destination E:\study\CocosProject\2048_Fight\build\web-mobile
+2018-09-06T03:56:23.089Z - normal: Delete E:\study\CocosProject\2048_Fight\build\web-mobile\**\*
+2018-09-06T03:56:28.791Z - normal: Compiled project javascript file successfully
+2018-09-06T03:56:28.791Z - normal: Start building assets
+2018-09-06T03:56:28.791Z - normal: Start spawn build-worker
+2018-09-06T03:56:29.807Z - normal: Finish spawn build-worker
+2018-09-06T03:56:29.807Z - normal: Start init build-worker
+2018-09-06T03:56:32.335Z - normal: 1.8.1
+2018-09-06T03:56:32.487Z - normal: Finish init build-worker
+2018-09-06T03:56:32.487Z - normal: Start build-assets in worker
+2018-09-06T03:56:36.228Z - normal: Finish build-assets in worker
+2018-09-06T03:56:36.236Z - normal: Finish building assets
+2018-09-06T03:56:36.244Z - normal: Start building raw assets
+2018-09-06T03:56:36.245Z - normal: Start building plugin scripts
+2018-09-06T03:56:36.255Z - normal: Finish building raw assets
+2018-09-06T03:56:36.307Z - normal: Generating main.js from D:\Program Files\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-06T03:56:36.346Z - normal: Generating html from D:\Program Files\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-09-06T03:56:36.361Z - normal: Built to "E:\study\CocosProject\2048_Fight\build\web-mobile" successfully
+2018-09-06T06:18:50.087Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T06:18:50.089Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T06:20:00.704Z - error: Please define 'type' parameter of VSController.gameP1 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T06:20:00.706Z - error: Please define 'type' parameter of VSController.gameP2 as the constructor of [object Object].
+    at Object.errorID (D:\Program Files\CocosCreator\resources\engine\CCDebugger.js:343:18)
+    at parseAttributes (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:1133:28)
+    at defineProp (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:147:17)
+    at declareProperties (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:812:17)
+    at Object.CCClass [as Class] (D:\Program Files\CocosCreator\resources\engine\cocos2d\core\platform\CCClass.js:942:9)
+    at __define (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:17:23)
+    at E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:163:13
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:170:11)
+    at Object.<anonymous> (E:\study\CocosProject\2048_Fight\temp\quick-scripts\assets\Script\VSController.js:173:3)
+2018-09-06T06:42:02.493Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\study\\CocosProject\\2048_Fight\\build",
+  "debug": false,
+  "dest": "E:\\study\\CocosProject\\2048_Fight\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "1f86761d-8268-4d90-b877-65de78d6d614"
+  ],
+  "sourceMaps": false,
+  "startScene": "1f86761d-8268-4d90-b877-65de78d6d614",
+  "template": "link",
+  "title": "2048Fight",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "8e5a64e0-27ed-44",
+  "zipCompressJs": true,
+  "project": "E:\\study\\CocosProject\\2048_Fight",
+  "projectName": "2048Fight",
+  "debugBuildWorker": false
+}
+2018-09-06T06:42:02.495Z - normal: Building E:\study\CocosProject\2048_Fight
+2018-09-06T06:42:02.495Z - normal: Destination E:\study\CocosProject\2048_Fight\build\web-mobile
+2018-09-06T06:42:02.496Z - normal: Delete E:\study\CocosProject\2048_Fight\build\web-mobile\**\*
+2018-09-06T06:42:08.896Z - normal: Compiled project javascript file successfully
+2018-09-06T06:42:08.897Z - normal: Start building assets
+2018-09-06T06:42:08.897Z - normal: Start spawn build-worker
+2018-09-06T06:42:10.630Z - normal: Finish spawn build-worker
+2018-09-06T06:42:10.630Z - normal: Start init build-worker
+2018-09-06T06:42:15.008Z - normal: 1.8.1
+2018-09-06T06:42:15.222Z - normal: Finish init build-worker
+2018-09-06T06:42:15.222Z - normal: Start build-assets in worker
+2018-09-06T06:42:19.277Z - normal: Finish build-assets in worker
+2018-09-06T06:42:19.292Z - normal: Finish building assets
+2018-09-06T06:42:19.309Z - normal: Start building raw assets
+2018-09-06T06:42:19.309Z - normal: Start building plugin scripts
+2018-09-06T06:42:19.329Z - normal: Finish building raw assets
+2018-09-06T06:42:19.380Z - normal: Generating main.js from D:\Program Files\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-06T06:42:19.412Z - normal: Generating html from D:\Program Files\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-09-06T06:42:19.449Z - normal: Built to "E:\study\CocosProject\2048_Fight\build\web-mobile" successfully
+2018-09-06T07:35:28.934Z - normal: Start building with options : {
+  "androidStudio": true,
+  "apiLevel": "",
+  "appABIs": [],
+  "appKey": "",
+  "appSecret": "",
+  "buildPath": "E:\\study\\CocosProject\\2048_Fight\\build",
+  "debug": false,
+  "dest": "E:\\study\\CocosProject\\2048_Fight\\build\\web-mobile",
+  "encryptJs": true,
+  "excludeScenes": [
+    "2d2f792f-a40c-49bb-a189-ed176a246e49"
+  ],
+  "excludedModules": [],
+  "includeAnySDK": false,
+  "includeEruda": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": true,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.helloworld",
+  "platform": "web-mobile",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "privateKey": "",
+  "renderMode": "0",
+  "scenes": [
+    "1f86761d-8268-4d90-b877-65de78d6d614"
+  ],
+  "sourceMaps": false,
+  "startScene": "1f86761d-8268-4d90-b877-65de78d6d614",
+  "template": "link",
+  "title": "2048Fight",
+  "useDebugKeystore": true,
+  "vsVersion": "auto",
+  "webOrientation": "auto",
+  "wechatgame": {
+    "appid": "",
+    "orientation": "portrait"
+  },
+  "xxteaKey": "8e5a64e0-27ed-44",
+  "zipCompressJs": true,
+  "project": "E:\\study\\CocosProject\\2048_Fight",
+  "projectName": "2048Fight",
+  "debugBuildWorker": false
+}
+2018-09-06T07:35:28.937Z - normal: Building E:\study\CocosProject\2048_Fight
+2018-09-06T07:35:28.937Z - normal: Destination E:\study\CocosProject\2048_Fight\build\web-mobile
+2018-09-06T07:35:28.938Z - normal: Delete E:\study\CocosProject\2048_Fight\build\web-mobile\**\*
+2018-09-06T07:35:32.770Z - normal: Compiled project javascript file successfully
+2018-09-06T07:35:32.770Z - normal: Start building assets
+2018-09-06T07:35:32.771Z - normal: Start spawn build-worker
+2018-09-06T07:35:34.452Z - normal: Finish spawn build-worker
+2018-09-06T07:35:34.452Z - normal: Start init build-worker
+2018-09-06T07:35:38.480Z - normal: 1.8.1
+2018-09-06T07:35:38.673Z - normal: Finish init build-worker
+2018-09-06T07:35:38.673Z - normal: Start build-assets in worker
+2018-09-06T07:35:39.722Z - normal: Finish build-assets in worker
+2018-09-06T07:35:39.741Z - normal: Finish building assets
+2018-09-06T07:35:39.763Z - normal: Start building raw assets
+2018-09-06T07:35:39.764Z - normal: Start building plugin scripts
+2018-09-06T07:35:39.779Z - normal: Finish building raw assets
+2018-09-06T07:35:39.799Z - normal: Generating main.js from D:\Program Files\CocosCreator\resources\static\build-templates\shares\main.js
+2018-09-06T07:35:39.814Z - normal: Generating html from D:\Program Files\CocosCreator\resources\static\build-templates\web-mobile\template\index.html
+2018-09-06T07:35:39.865Z - normal: Built to "E:\study\CocosProject\2048_Fight\build\web-mobile" successfully

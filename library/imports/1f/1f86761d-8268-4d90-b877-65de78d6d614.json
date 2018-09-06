@@ -3266,8 +3266,12 @@
     "game2": {
       "__id__": 85
     },
-    "gameP1": null,
-    "gameP2": null,
+    "gameP1": {
+      "__id__": 82
+    },
+    "gameP2": {
+      "__id__": 84
+    },
     "p1Label": {
       "__id__": 120
     },
@@ -4697,7 +4701,7 @@
     ],
     "_prefab": null,
     "_id": "88vJG7Jj5EVKJl4rgunpc1",
-    "_opacity": 255,
+    "_opacity": 150,
     "_color": {
       "__type__": "cc.Color",
       "r": 255,
@@ -4775,7 +4779,7 @@
     ],
     "_prefab": null,
     "_id": "5a0x6a/o9PdISM5nRpfF9L",
-    "_opacity": 255,
+    "_opacity": 150,
     "_color": {
       "__type__": "cc.Color",
       "r": 0,

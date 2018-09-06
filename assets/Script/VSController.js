@@ -11,7 +11,7 @@
 var VSController = cc.Class({
     extends: cc.Component,
 
-    properties: {
+    properties:()=>( {
         isDown: true,
         sliceUp:{
             default: null,
@@ -51,11 +51,11 @@ var VSController = cc.Class({
         },
         gameP1: {
             default: null,
-            type:require("Game")
+            type: require("Game")
         },
         gameP2: {
             default: null,
-            type:require("Game")
+            type: require("Game")
         },
         p1Label: {
             default: null,
@@ -80,7 +80,7 @@ var VSController = cc.Class({
         //         this._bar = value;
         //     }
         // },
-    },
+    }),
 
     // LIFE-CYCLE CALLBACKS:
 

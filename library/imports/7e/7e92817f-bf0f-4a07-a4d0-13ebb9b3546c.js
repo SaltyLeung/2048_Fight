@@ -17,75 +17,77 @@ cc._RF.push(module, '7e928F/vw9KB6TQE+u5s1Rs', 'VSController');
 var VSController = cc.Class({
     extends: cc.Component,
 
-    properties: {
-        isDown: true,
-        sliceUp: {
-            default: null,
-            type: cc.Node
-        },
-        sliceDown: {
-            default: null,
-            type: cc.Node
-        },
-        buttonUp: {
-            default: null,
-            type: cc.Node
-        },
-        buttonDown: {
-            default: null,
-            type: cc.Node
-        },
-        blockWhite: {
-            default: null,
-            type: cc.Node
-        },
-        blockDark: {
-            default: null,
-            type: cc.Node
-        },
-        restart: {
-            default: null,
-            type: cc.Node
-        },
-        game1: {
-            default: null,
-            type: cc.Node
-        },
-        game2: {
-            default: null,
-            type: cc.Node
-        },
-        gameP1: {
-            default: null,
-            type: require("Game")
-        },
-        gameP2: {
-            default: null,
-            type: require("Game")
-        },
-        p1Label: {
-            default: null,
-            type: cc.Label
-        },
-        p2Label: {
-            default: null,
-            type: cc.Label
-        }
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+    properties: function properties() {
+        return {
+            isDown: true,
+            sliceUp: {
+                default: null,
+                type: cc.Node
+            },
+            sliceDown: {
+                default: null,
+                type: cc.Node
+            },
+            buttonUp: {
+                default: null,
+                type: cc.Node
+            },
+            buttonDown: {
+                default: null,
+                type: cc.Node
+            },
+            blockWhite: {
+                default: null,
+                type: cc.Node
+            },
+            blockDark: {
+                default: null,
+                type: cc.Node
+            },
+            restart: {
+                default: null,
+                type: cc.Node
+            },
+            game1: {
+                default: null,
+                type: cc.Node
+            },
+            game2: {
+                default: null,
+                type: cc.Node
+            },
+            gameP1: {
+                default: null,
+                type: require("Game")
+            },
+            gameP2: {
+                default: null,
+                type: require("Game")
+            },
+            p1Label: {
+                default: null,
+                type: cc.Label
+            },
+            p2Label: {
+                default: null,
+                type: cc.Label
+            }
+            // foo: {
+            //     // ATTRIBUTES:
+            //     default: null,        // The default value will be used only when the component attaching
+            //                           // to a node for the first time
+            //     type: cc.SpriteFrame, // optional, default is typeof default
+            //     serializable: true,   // optional, default is true
+            // },
+            // bar: {
+            //     get () {
+            //         return this._bar;
+            //     },
+            //     set (value) {
+            //         this._bar = value;
+            //     }
+            // },
+        };
     },
 
     // LIFE-CYCLE CALLBACKS:

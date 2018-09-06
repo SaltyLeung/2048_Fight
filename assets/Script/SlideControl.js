@@ -77,7 +77,7 @@ cc.Class({
         //console.log(event.touch.getLocation());
         var nowLocation = new cc.v2(event.touch.getLocationX(),event.touch.getLocationY());
         nowLocation.sub(this.touchStartLocation, moveVec);
-        console.log(moveVec.magSqr());
+        //console.log(moveVec.magSqr());
         if(moveVec.magSqr() > this.minMoveDisSqr) {
             if(Math.abs(moveVec.x) > Math.abs(moveVec.y)) {
                 if(moveVec.x > 0) { this.gameScript_1.onSlide("right"); this.gameScript_2.onSlide("right"); this.touchStartLocation = nowLocation;}
