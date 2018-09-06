@@ -23,7 +23,12 @@ cc.Class({
         gameScript_2: {
             default:null,
             type:require("Game")
-        }
+        },
+        touchStartLocation: {
+            default:null,
+            type:cc.v2
+        },
+        minMoveDisSqr:100,
         // foo: {
         //     // ATTRIBUTES:
         //     default: null,        // The default value will be used only when the component attaching
@@ -50,19 +55,42 @@ cc.Class({
 
     start () {
         var that = this;
-        this.node.on(cc.Node.EventType.TOUCH_MOVE, function (event) {
-            //console.log("touch");
-            //console.log(that.gameScript);
-            var delta = event.getDelta();
-            if(Math.abs(delta.x) >= Math.abs(delta.y)) {
-                if(delta.x > 0) { that.gameScript_1.onSlide("right"); that.gameScript_2.onSlide("right"); }
-                else { that.gameScript_1.onSlide("left"); that.gameScript_2.onSlide("left"); }
-            } else {
-                if(delta.y > 0) {that.gameScript_1.onSlide("up");that.gameScript_2.onSlide("up"); }
-                else {that.gameScript_1.onSlide("down");that.gameScript_2.onSlide("down"); }
-            }
-          }, this);
+        this.node.on(cc.Node.EventType.TOUCH_START, this.onTouchStart, this);
+        this.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
+        
     },
+    onTouchStart(event) {
+        this.touchStartLocation = event.touch.getLocation();
+        this.node.on(cc.Node.EventType.TOUCH_MOVE,this.onTouchMove,this);
+        /*    if(Math.abs(delta.x) >= Math.abs(delta.y)) {
+                if(delta.x > 0) { this.gameScript_1.onSlide("right"); this.gameScript_2.onSlide("right"); }
+                else { this.gameScript_1.onSlide("left"); this.gameScript_2.onSlide("left"); }
+            } else {
+                if(delta.y > 0) {this.gameScript_1.onSlide("up");this.gameScript_2.onSlide("up"); }
+                else {this.gameScript_1.onSlide("down");this.gameScript_2.onSlide("down"); }
+            }*/
+    },
+    onTouchMove(event) {
+        var moveVec = new cc.v2();
+        //var nowLocation;
+        //nowLocation = event.touch.getLocation();
+        //console.log(event.touch.getLocation());
+        var nowLocation = new cc.v2(event.touch.getLocationX(),event.touch.getLocationY());
+        nowLocation.sub(this.touchStartLocation, moveVec);
+        console.log(moveVec.magSqr());
+        if(moveVec.magSqr() > this.minMoveDisSqr) {
+            if(Math.abs(moveVec.x) > Math.abs(moveVec.y)) {
+                if(moveVec.x > 0) { this.gameScript_1.onSlide("right"); this.gameScript_2.onSlide("right"); this.touchStartLocation = nowLocation;}
+                else { this.gameScript_1.onSlide("left"); this.gameScript_2.onSlide("left"); }
+            } else {
+                if(moveVec.y > 0) {this.gameScript_1.onSlide("up");this.gameScript_2.onSlide("up");  this.touchStartLocation = nowLocation;}
+                else {this.gameScript_1.onSlide("down");this.gameScript_2.onSlide("down");  this.touchStartLocation = nowLocation;}
+            }
+        }
+    },
+    onTouchEnd() {
+        this.node.off(cc.Node.EventType.TOUCH_MOVE,this.onTouchMove,this);
+    }
 
     // update (dt) {},
 });

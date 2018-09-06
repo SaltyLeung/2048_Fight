@@ -12,10 +12,14 @@ var Game = cc.Class({
     extends: cc.Component,
 
     properties: {
+        gameOver: false,
+        win:false,
+        slideCount:-1,
         isP2: false,
         destroySpeed: 2,
         //fadeSpeed: 0.4,
         timeOut : true,
+       
         vsController: {
             default: null,
             type: require("VSController")
@@ -72,14 +76,20 @@ var Game = cc.Class({
         //console.log("aaaaa");
     },
     update(dt) {
-     
+        //if(this.slideCount >= 6) {this.slideCount = 0; this.vsController.switchSide();} 
     },
 
     randomCreate() {
+        if(this.gameOver == true) return;
+        //this.slideCount += 1;
         //找随机空位
         var emptyPos = new Array();
-        for(var i = 0; i < 16; ++i) if(this.positionList[i].number == 0) emptyPos.push(i);
-        if(emptyPos.length == 0) this.gameOver();
+        for(var i = 0; i < 16; ++i) { 
+            if(this.positionList[i].number == 0) emptyPos.push(i); 
+            if((this.positionList[i].number >= 2048) && (this.isP2 == false)) { this.vsController.p1Win(); return; }
+            else if((this.positionList[i].number >= 2048) && (this.isP2 == true)) { this.vsController.p2Win(); return; }
+        }
+        if(emptyPos.length == 0) {this.gameOver = true;return;}
         var index = Math.floor(Math.random() * emptyPos.length);
         
         //随机生成2或4
@@ -433,9 +443,9 @@ var Game = cc.Class({
         
     },*/
 
-    gameOver() {
-      
-    }
+    /*gameOver() {
+        
+    }*/
 
     // update (dt) {},
 });

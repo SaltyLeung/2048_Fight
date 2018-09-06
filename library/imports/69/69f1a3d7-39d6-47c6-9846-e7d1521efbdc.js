@@ -20,10 +20,14 @@ var Game = cc.Class({
     extends: cc.Component,
 
     properties: {
+        gameOver: false,
+        win: false,
+        slideCount: -1,
         isP2: false,
         destroySpeed: 2,
         //fadeSpeed: 0.4,
         timeOut: true,
+
         vsController: {
             default: null,
             type: require("VSController")
@@ -76,13 +80,25 @@ var Game = cc.Class({
         this.randomCreate();
         //console.log("aaaaa");
     },
-    update: function update(dt) {},
+    update: function update(dt) {
+        //if(this.slideCount >= 6) {this.slideCount = 0; this.vsController.switchSide();} 
+    },
     randomCreate: function randomCreate() {
+        if (this.gameOver == true) return;
+        //this.slideCount += 1;
         //找随机空位
         var emptyPos = new Array();
         for (var i = 0; i < 16; ++i) {
             if (this.positionList[i].number == 0) emptyPos.push(i);
-        }if (emptyPos.length == 0) this.gameOver();
+            if (this.positionList[i].number >= 2048 && this.isP2 == false) {
+                this.vsController.p1Win();return;
+            } else if (this.positionList[i].number >= 2048 && this.isP2 == true) {
+                this.vsController.p2Win();return;
+            }
+        }
+        if (emptyPos.length == 0) {
+            this.gameOver = true;return;
+        }
         var index = Math.floor(Math.random() * emptyPos.length);
 
         //随机生成2或4
@@ -457,23 +473,24 @@ var Game = cc.Class({
             default:
                 break;
         }return true;
-    },
+    }
+}
+/*eat(source, target, newNode) {
+    this.moveableList[target].destroy();
+    this.moveableList[target] = this.moveableList[source];
+    this.moveableList[source] = null;
+      this.eatableList[target] = false;
+      this.positionList[source].number = 0;
+    this.positionList[target].number *= 2;
+    
+},*/
 
-    /*eat(source, target, newNode) {
-        this.moveableList[target].destroy();
-        this.moveableList[target] = this.moveableList[source];
-        this.moveableList[source] = null;
-          this.eatableList[target] = false;
-          this.positionList[source].number = 0;
-        this.positionList[target].number *= 2;
-        
-    },*/
+/*gameOver() {
+    
+}*/
 
-    gameOver: function gameOver() {}
-
-    // update (dt) {},
-
-});
+// update (dt) {},
+);
 
 module.exports = Game;
 

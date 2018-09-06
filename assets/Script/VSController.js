@@ -36,6 +36,34 @@ var VSController = cc.Class({
         blockDark:{
             default: null,
             type: cc.Node
+        }, 
+        restart: {
+            default:null,
+            type:cc.Node
+        },
+        game1: {
+            default: null,
+            type:cc.Node
+        },
+        game2: {
+            default: null,
+            type:cc.Node
+        },
+        gameP1: {
+            default: null,
+            type:require("Game")
+        },
+        gameP2: {
+            default: null,
+            type:require("Game")
+        },
+        p1Label: {
+            default: null,
+            type: cc.Label
+        },
+        p2Label: {
+            default: null,
+            type: cc.Label
         },
         // foo: {
         //     // ATTRIBUTES:
@@ -59,7 +87,8 @@ var VSController = cc.Class({
     // onLoad () {},
 
     start () {
-
+        this.gameP1 = this.game1.getComponent((require("Game")));
+        this.gameP2 = this.game2.getComponent((require("Game")));
     },
     switchSide() {
       if(this.isDown == true) {
@@ -85,6 +114,37 @@ var VSController = cc.Class({
         this.buttonUp.active = true;
         this.sliceDown.active = true;
         this.blockWhite.active = false;
+    },
+    p1Win() {
+        //this.gameP2.node.active = false;
+        //this.gameP1.dode.active = false;
+        this.buttonUp.active = false;
+        this.buttonDown.active = false;
+        this.sliceDown.active = false;
+        this.sliceUp.active = false;
+        this.p2Label.string = "Black Lose!";
+        this.p1Label.string = "White Win!";
+        this.restart.active = true;
+    },
+    p2Win() {
+        this.buttonUp.active = false;
+        this.buttonDown.active = false;
+        this.sliceDown.active = false;
+        this.sliceUp.active = false;
+        this.p2Label.string = "Black Win!";
+        this.p1Label.string = "White Lose!";
+        this.restart.active = true;
+    },
+    openP2() {
+        if(this.gameP2.gameOver == false) this.p2Win();
+        else this.p1Win();
+    },
+    openP1() {
+        if(this.gameP1.gameOver == false) this.p1Win();
+        else this.p2Win();
+    },
+    reloadScene() {
+        cc.director.loadScene("Game");
     }
 
     // update (dt) {},
