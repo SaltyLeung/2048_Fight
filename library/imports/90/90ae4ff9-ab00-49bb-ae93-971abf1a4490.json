@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bomb_Red",
+    "texture": "af118f13-9a35-45ac-b877-1ee464ce77e4",
+    "atlas": "",
+    "rect": [
+      23,
+      50,
+      154,
+      129
+    ],
+    "offset": [
+      0,
+      -14.5
+    ],
+    "originalSize": [
+      200,
+      200
+    ]
+  }
+}

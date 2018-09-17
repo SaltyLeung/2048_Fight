@@ -1,0 +1,15 @@
+{
+  "packedTextures": [
+    {
+      "path": "E:\\study\\CocosProject\\2048_Fight\\temp\\TexturePacker\\Sprite\\bomb_explosion\\Bomb_explosion.pac/Bomb_explosion-1.png",
+      "name": "Bomb_explosion-1.png",
+      "size": "1024x1024"
+    },
+    {
+      "path": "E:\\study\\CocosProject\\2048_Fight\\temp\\TexturePacker\\Sprite\\bomb_explosion\\Bomb_explosion.pac/Bomb_explosion-2.png",
+      "name": "Bomb_explosion-2.png",
+      "size": "512x256"
+    }
+  ],
+  "unpackedTextures": []
+}

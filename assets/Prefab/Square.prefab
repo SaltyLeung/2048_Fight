@@ -199,7 +199,7 @@
     "tempTarget": 0,
     "toDouble": false,
     "toDestroyed": false,
-    "moveSpeed": 0.4
+    "moveSpeed": 0.2
   },
   {
     "__type__": "cc.Animation",

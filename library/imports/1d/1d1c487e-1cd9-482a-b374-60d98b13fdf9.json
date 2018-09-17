@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bomb_explosion_00024",
+    "texture": "5e85f615-de51-454e-a196-bb26697ee083",
+    "atlas": "",
+    "rect": [
+      0,
+      198,
+      446,
+      193
+    ],
+    "offset": [
+      -27,
+      -44.5
+    ],
+    "originalSize": [
+      500,
+      500
+    ]
+  }
+}

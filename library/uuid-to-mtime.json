@@ -45,7 +45,7 @@
     "relativePath": "Scene"
   },
   "4734c20c-0db8-4eb2-92ea-e692f4d70934": {
-    "asset": 1536158537339,
+    "asset": 1537098623882,
     "meta": 1535945247961,
     "relativePath": "Script"
   },
@@ -80,13 +80,13 @@
     "relativePath": "Fonts"
   },
   "a00be5df-79db-4883-8425-474325fa1726": {
-    "asset": 1535967918447,
+    "asset": 1536560825601,
     "meta": 1535967904332,
     "relativePath": "Prefab"
   },
   "5bf6c67a-c081-456f-836a-277d935f0d4f": {
-    "asset": 1536157815570,
-    "meta": 1536157815611,
+    "asset": 1537111438799,
+    "meta": 1537111438826,
     "relativePath": "Prefab\\Square.prefab"
   },
   "cfaa8f10-deb4-4159-8091-59a45e75bf41": {
@@ -95,18 +95,18 @@
     "relativePath": "Script\\Define.js"
   },
   "1f86761d-8268-4d90-b877-65de78d6d614": {
-    "asset": 1536216099154,
-    "meta": 1536216099184,
+    "asset": 1537163398697,
+    "meta": 1537163398728,
     "relativePath": "Scene\\Game.fire"
   },
   "ca23f331-ed29-4894-a3a7-2370ed7bef41": {
-    "asset": 1536135272036,
-    "meta": 1536135272071,
+    "asset": 1537112479978,
+    "meta": 1537112480006,
     "relativePath": "Animation\\2048Fade.anim"
   },
   "48df96fe-1abe-4bd7-82be-cba18789f215": {
-    "asset": 1536122146460,
-    "meta": 1536122146488,
+    "asset": 1537112552498,
+    "meta": 1537112552543,
     "relativePath": "Animation\\2048Show.anim"
   },
   "71561142-4c83-4933-afca-cb7a17f67053": {
@@ -295,28 +295,173 @@
     "relativePath": "prefab\\webview.prefab"
   },
   "cd0c5a6f-c808-405a-962b-1a98c6d31275": {
-    "asset": 1536122062557,
+    "asset": 1537101113505,
     "meta": 1536121512954,
     "relativePath": "Animation"
   },
+  "8d7df866-5fd4-4177-8bfc-3dd0dbd9b90b": {
+    "asset": 1537153595623,
+    "meta": 1537153595651,
+    "relativePath": "Prefab\\Bomb.prefab"
+  },
   "cada9bb7-11de-4bc1-9c7f-c244477e4149": {
-    "asset": 1536204390636,
-    "meta": 1536204462939,
+    "asset": 1537034434029,
+    "meta": 1537034482874,
     "relativePath": "Script\\Square.js"
   },
-  "7e92817f-bf0f-4a07-a4d0-13ebb9b3546c": {
-    "asset": 1536215075544,
-    "meta": 1536215079917,
-    "relativePath": "Script\\VSController.js"
+  "75ed88a0-c20f-4c1e-92ea-7137f1790f3a": {
+    "asset": 1537097985904,
+    "meta": 1537091302442,
+    "relativePath": "Sprite"
+  },
+  "cc2cf168-62d7-4a07-8c03-e709508c30f0": {
+    "asset": 1537091300187,
+    "meta": 1537091318755,
+    "relativePath": "Sprite\\Bomb_Button.png"
+  },
+  "af118f13-9a35-45ac-b877-1ee464ce77e4": {
+    "asset": 1537093126916,
+    "meta": 1537093134281,
+    "relativePath": "Sprite\\Bomb_Red.png"
+  },
+  "f04bbee0-735e-4670-83f5-ae31a3cd8626": {
+    "asset": 1537100660128,
+    "meta": 1537097984785,
+    "relativePath": "Sprite\\bomb"
+  },
+  "a3591758-37a7-4157-9043-e4469c8f23e5": {
+    "asset": 1537097926173,
+    "meta": 1537097998187,
+    "relativePath": "Sprite\\bomb\\bomb_00017.png"
+  },
+  "2ead814c-452b-402e-898a-30ae19d9f41f": {
+    "asset": 1537097926265,
+    "meta": 1537097998197,
+    "relativePath": "Sprite\\bomb\\bomb_00018.png"
+  },
+  "b56280f2-7ac8-405c-b224-228af0d6d479": {
+    "asset": 1537097926324,
+    "meta": 1537097998448,
+    "relativePath": "Sprite\\bomb\\bomb_00019.png"
+  },
+  "c85cc89c-fd2a-4a28-81d7-6fca55fb638f": {
+    "asset": 1537097926377,
+    "meta": 1537097998457,
+    "relativePath": "Sprite\\bomb\\bomb_00020.png"
+  },
+  "c6c9a435-eccd-4fca-bf0e-faa621ef1018": {
+    "asset": 1537097926449,
+    "meta": 1537097998587,
+    "relativePath": "Sprite\\bomb\\bomb_00021.png"
+  },
+  "63043b09-fb7b-42e4-81b4-7daaae168ed9": {
+    "asset": 1537097926644,
+    "meta": 1537097998590,
+    "relativePath": "Sprite\\bomb\\bomb_00022.png"
+  },
+  "3bf2b5ad-5bc6-4a59-a1f9-7231bc6ac3f6": {
+    "asset": 1537097926956,
+    "meta": 1537097998643,
+    "relativePath": "Sprite\\bomb\\bomb_00023.png"
+  },
+  "cc78bb4d-ad13-4bd9-83a8-18431cebc5e9": {
+    "asset": 1537097927151,
+    "meta": 1537097998658,
+    "relativePath": "Sprite\\bomb\\bomb_00024.png"
+  },
+  "6a75f55d-0ba6-41ee-a33e-0cc79d6005fd": {
+    "asset": 1537097927368,
+    "meta": 1537097999226,
+    "relativePath": "Sprite\\bomb\\bomb_00025.png"
+  },
+  "ebf6e72f-c7d1-44ff-ae6b-f8fd43639e43": {
+    "asset": 1537098669373,
+    "meta": 1537097985905,
+    "relativePath": "Sprite\\bomb_explosion"
+  },
+  "4c6b4854-da8f-422a-8214-0247f8636c97": {
+    "asset": 1537097957957,
+    "meta": 1537097999257,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00017.png"
+  },
+  "8283e81c-ab25-4976-94b4-119925c14801": {
+    "asset": 1537097958086,
+    "meta": 1537097999275,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00018.png"
+  },
+  "05690f54-5f93-4072-b491-63eee5cd539d": {
+    "asset": 1537097958215,
+    "meta": 1537097999290,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00019.png"
+  },
+  "944e63f6-0094-4eb7-a3ef-3b841a946e65": {
+    "asset": 1537097958434,
+    "meta": 1537097999327,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00021.png"
+  },
+  "f74a2463-0274-4566-970b-a208a81dbeaa": {
+    "asset": 1537097958536,
+    "meta": 1537097999564,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00022.png"
+  },
+  "2d3a1443-5217-4869-bc3b-a8f545078c8e": {
+    "asset": 1537097958328,
+    "meta": 1537097999566,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00020.png"
+  },
+  "c0bba766-7ec8-46fa-9797-b8b42dc7cb04": {
+    "asset": 1537097958621,
+    "meta": 1537097999586,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00023.png"
+  },
+  "5e85f615-de51-454e-a196-bb26697ee083": {
+    "asset": 1537097958690,
+    "meta": 1537097999597,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00024.png"
+  },
+  "d1049803-9f15-4bfc-963a-20eae4b94375": {
+    "asset": 1537097958749,
+    "meta": 1537097999607,
+    "relativePath": "Sprite\\bomb_explosion\\bomb_explosion_00025.png"
+  },
+  "c4ab71b3-4b51-4a9f-b7b9-49bc22882981": {
+    "asset": 1537098648790,
+    "meta": 1537098951122,
+    "relativePath": "Sprite\\bomb_explosion\\Bomb_explosion.pac"
+  },
+  "bc0a6404-5fbd-4a2c-a5a6-e9bff5e28ef0": {
+    "asset": 1537101824258,
+    "meta": 1537101824296,
+    "relativePath": "Animation\\bomb_idle.anim"
+  },
+  "7194212c-e20e-423a-8cb7-24ce5aaabb99": {
+    "asset": 1537101830353,
+    "meta": 1537101830371,
+    "relativePath": "Animation\\bomb_explosion.anim"
   },
   "258c5e34-f4a6-4a52-9c10-459fd7159bb8": {
-    "asset": 1536215773091,
-    "meta": 1536215773950,
+    "asset": 1537105322127,
+    "meta": 1537105817890,
     "relativePath": "Script\\SlideControl.js"
   },
+  "17d61cea-6c4d-4888-b519-d9bcb05d1ab2": {
+    "asset": 1537153354000,
+    "meta": 1537153374041,
+    "relativePath": "Script\\Bomb.js"
+  },
   "69f1a3d7-39d6-47c6-9846-e7d1521efbdc": {
-    "asset": 1536219222790,
-    "meta": 1536219224909,
+    "asset": 1537153401851,
+    "meta": 1537153403830,
     "relativePath": "Script\\Game.js"
+  },
+  "64ec1ce8-d3a9-40d3-b2c0-d903d76bba67": {
+    "asset": 1537163186878,
+    "meta": 1537163205138,
+    "relativePath": "Script\\BombButton.js"
+  },
+  "7e92817f-bf0f-4a07-a4d0-13ebb9b3546c": {
+    "asset": 1537163386824,
+    "meta": 1537163388018,
+    "relativePath": "Script\\VSController.js"
   }
 }

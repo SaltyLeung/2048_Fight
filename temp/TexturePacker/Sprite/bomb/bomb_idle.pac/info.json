@@ -1,0 +1,10 @@
+{
+  "packedTextures": [
+    {
+      "path": "E:\\study\\CocosProject\\2048_Fight\\temp\\TexturePacker\\Sprite\\bomb\\bomb_idle.pac/bomb_idle-1.png",
+      "name": "bomb_idle-1.png",
+      "size": "1024x1024"
+    }
+  ],
+  "unpackedTextures": []
+}

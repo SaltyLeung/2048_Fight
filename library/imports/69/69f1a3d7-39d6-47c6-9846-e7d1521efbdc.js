@@ -45,23 +45,24 @@ var Game = cc.Class({
         moveableList: { //管理可移动方框
             default: [],
             type: [cc.Node]
+        }, stepCount: 0
 
-            // foo: {
-            //     // ATTRIBUTES:
-            //     default: null,        // The default value will be used only when the component attaching
-            //                           // to a node for the first time
-            //     type: cc.SpriteFrame, // optional, default is typeof default
-            //     serializable: true,   // optional, default is true
-            // },
-            // bar: {
-            //     get () {
-            //         return this._bar;
-            //     },
-            //     set (value) {
-            //         this._bar = value;
-            //     }
-            // },
-        } },
+        // foo: {
+        //     // ATTRIBUTES:
+        //     default: null,        // The default value will be used only when the component attaching
+        //                           // to a node for the first time
+        //     type: cc.SpriteFrame, // optional, default is typeof default
+        //     serializable: true,   // optional, default is true
+        // },
+        // bar: {
+        //     get () {
+        //         return this._bar;
+        //     },
+        //     set (value) {
+        //         this._bar = value;
+        //     }
+        // },
+    },
 
     // LIFE-CYCLE CALLBACKS:
 
@@ -76,6 +77,7 @@ var Game = cc.Class({
     },
     start: function start() {
         this.randomCreate();
+
         //console.log("aaaaa");
     },
     update: function update(dt) {
@@ -403,32 +405,32 @@ var Game = cc.Class({
         switch (event.keyCode) {
             case cc.KEY.s:
                 if (this.moveDown() == false) return;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();console.log("sca");
-                }, 0.5);
+                }, 0.3);
                 //for(var i = 0; i < 16; ++i) console.log(this.moveableList[i]);
                 break;
             case cc.KEY.w:
                 if (this.moveUp() == false) return;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();console.log("sca");
-                }, 0.5);
+                }, 0.3);
                 break;
             case cc.KEY.d:
                 if (this.moveRight() == false) return;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();console.log("sca");
-                }, 0.5);
+                }, 0.3);
                 break;
             case cc.KEY.a:
                 if (this.moveLeft() == false) return;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();console.log("sca");
-                }, 0.5);
+                }, 0.3);
                 break;
             default:
                 break;
@@ -441,32 +443,32 @@ var Game = cc.Class({
         switch (direction) {
             case "down":
                 if (this.moveDown() == false) return false;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();
-                }, 0.8);
+                }, 0.3);
                 //for(var i = 0; i < 16; ++i) console.log(this.moveableList[i]);
                 break;
             case "up":
                 if (this.moveUp() == false) return false;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();
-                }, 0.8);
+                }, 0.3);
                 break;
             case "right":
                 if (this.moveRight() == false) return false;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();
-                }, 0.8);
+                }, 0.3);
                 break;
             case "left":
                 if (this.moveLeft() == false) return false;
-                this.timeOut = false;
+                this.timeOut = false;this.stepCount += 1;
                 this.scheduleOnce(function () {
                     this.timeOut = true;this.randomCreate();
-                }, 0.8);
+                }, 0.3);
                 break;
             default:
                 break;
@@ -484,6 +486,11 @@ var Game = cc.Class({
         for (var i = 3; i <= 11; i += 4) {
             if (this.positionList[i].number == this.positionList[i + 4].number) return true;
         }return false;
+    },
+    destroyIndex: function destroyIndex(index) {
+        this.positionList[index].number = 0;
+        this.moveableList[index].destroy();
+        this.moveableList[index] = null;
     }
     /*eat(source, target, newNode) {
         this.moveableList[target].destroy();

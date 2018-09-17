@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bomb_00019",
+    "texture": "b56280f2-7ac8-405c-b224-228af0d6d479",
+    "atlas": "",
+    "rect": [
+      121,
+      138,
+      274,
+      243
+    ],
+    "offset": [
+      8,
+      -9.5
+    ],
+    "originalSize": [
+      500,
+      500
+    ]
+  }
+}

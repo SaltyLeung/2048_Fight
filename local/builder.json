@@ -2,7 +2,7 @@
   "androidStudio": true,
   "apiLevel": "",
   "appABIs": [],
-  "buildPath": "./build",
+  "buildPath": "./build/BombVersion_Quick",
   "debug": false,
   "includeEruda": false,
   "keystoreAlias": "",

@@ -58,6 +58,7 @@ var Square = cc.Class({
     },
 
     onLoad () {
+        //console.log("create");
         this.numLabel = this.node.getChildByName("Number");
         this.gameScript = cc.find("Game").getComponent("Game");
         this.gameScriptP2 = cc.find("GameP2").getComponent("Game");
@@ -78,6 +79,7 @@ var Square = cc.Class({
     },*/
 
     update (dt) {
+        //console.log("create");
         this.numLabel.getComponent(cc.Label).string = this.number.toString();
     },
 });
